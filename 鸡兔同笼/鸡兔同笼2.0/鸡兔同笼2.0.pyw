@@ -12,12 +12,12 @@ def cuozi(*x):
     for xx in x:
         xx.kuang.insert(0,shuoming[1])
 class Suanji(object):
-    def __init__(self,wenben='鸡有多少只🐔',ji=True,tou=True):
+    def __init__(self,wenben='鸡有多少只',ji=True,tou=True):
         self.tou=tou
         self.ji=ji
         self.wenben=wenben
         tk.Label(main, text=self.wenben, font=('宋体', 20), bg='lightblue').pack()
-        self.kuang = tk.Entry(main, font=('黑体', 25))
+        self.kuang = tk.Entry(main, font=('黑体', 15))
         self.kuang.pack()
     def du(self):
         shumu = int(self.kuang.get())
@@ -82,18 +82,18 @@ main.iconbitmap('img/000.ico')
 PI = tk.PhotoImage(file='img/000.png')
 tupian = tk.Label(main,image=PI,bg='lightblue')
 tupian.pack()
-biaoti = tk.Label(main,text='鸡兔同笼',font=('楷体',80),bg='lightblue')
+biaoti = tk.Label(main,text='鸡兔同笼',font=('楷体',40),bg='lightblue')
 biaoti.pack()
 wenzi1 = open('txt/text1.txt','r',encoding='utf-8')
 shuoming = eval(wenzi1.read())
 JI = Suanji()
-TU = Suanji(wenben='兔有多少只🐰',ji=False)
+TU = Suanji(wenben='兔有多少只',ji=False)
 anniu = tk.Button(main,text='计算头和腿',command=suanji)
 anniu.pack()
 Tou = Suanji(wenben='头有多少颗')
 Tui = Suanji(wenben='腿有多少条',tou=False)
 anniu2 = tk.Button(main,text='计算鸡和兔',command=jisuan)
 anniu2.pack()
-xiaozi = tk.Label(main,text=shuoming[0],font=('宋体',20),bg='lightblue')
+xiaozi = tk.Label(main,text=shuoming[0],font=('宋体',15),bg='lightblue')
 xiaozi.pack()
 main.mainloop()
