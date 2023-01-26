@@ -1,0 +1,20 @@
+鸡兔同笼
+
+版本 ： 2.0
+
+开发者 ： 张博洋
+
+时间：2023年1月
+
+更新 ：
+增加了唐僧取经时间计算功能；
+修复了一些已知问题.
+
+运行方法：
+直接运行“鸡兔同笼”目录下的“鸡兔同笼.exe”文件.
+
+源代码存储库：
+https://github.com/zhangboyaung.github.io/softwares-for-pc/tree/main/%E9%B8%A1%E5%85%94%E5%90%8C%E7%AC%BC2.1
+
+个人网站：
+https://zhangboyaung.github.io/
